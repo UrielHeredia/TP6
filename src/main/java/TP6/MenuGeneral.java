@@ -76,6 +76,11 @@ public class MenuGeneral extends javax.swing.JFrame {
         jMenu2.add(jMenuItem3);
 
         jMenuItem4.setText("Consulta por Rubro");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem4);
 
         jMenuBar1.add(jMenu2);
@@ -107,6 +112,12 @@ public class MenuGeneral extends javax.swing.JFrame {
         Escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_ProductosActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        ListadoPorRubro verventana = new ListadoPorRubro();
+        Escritorio.add(verventana);
+        verventana.show();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
