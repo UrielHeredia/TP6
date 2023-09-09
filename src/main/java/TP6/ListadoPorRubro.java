@@ -32,15 +32,19 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
 
         jlListado = new javax.swing.JLabel();
         jlRubro = new javax.swing.JLabel();
-        jcCategoria = new javax.swing.JComboBox<>();
+        Rubro = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtTabla = new javax.swing.JTable();
+
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
 
         jlListado.setText("Listado de Productos por Rubro");
 
         jlRubro.setText("Elija rubro:");
 
-        jcCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Comestibles", "Limpieza", "Perfumeria" }));
+        Rubro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Comestibles", "Limpieza", "Perfumeria" }));
 
         jtTabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -65,7 +69,7 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jlRubro)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Rubro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jlListado))
                 .addGap(87, 87, 87))
             .addGroup(layout.createSequentialGroup()
@@ -80,7 +84,7 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlRubro)
-                    .addComponent(jcCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Rubro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
@@ -90,15 +94,15 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 private void armarCabecera(){
         modelo.addColumn("Código");
-        modelo.addColumn("Descripción");
+        modelo.addColumn("DescriTablaRubro");
         modelo.addColumn("Precio");
         modelo.addColumn("Stock");
         jtTabla.setModel(modelo);
             }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> Rubro;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JComboBox<String> jcCategoria;
     private javax.swing.JLabel jlListado;
     private javax.swing.JLabel jlRubro;
     private javax.swing.JTable jtTabla;
