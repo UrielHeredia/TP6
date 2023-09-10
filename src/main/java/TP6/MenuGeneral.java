@@ -55,11 +55,6 @@ public class MenuGeneral extends javax.swing.JFrame {
         );
 
         Administracion.setText("Administracion");
-        Administracion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AdministracionActionPerformed(evt);
-            }
-        });
 
         Productos.setText("Productos");
         Productos.addActionListener(new java.awt.event.ActionListener() {
@@ -122,16 +117,6 @@ public class MenuGeneral extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void AdministracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdministracionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AdministracionActionPerformed
-
-    private void ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProductosActionPerformed
-        GestionDeProducto verventana = new GestionDeProducto();
-        Escritorio.add(verventana);
-        verventana.show();
-    }//GEN-LAST:event_ProductosActionPerformed
-
     private void MenuRubroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuRubroActionPerformed
         ListadoPorRubro verventana = new ListadoPorRubro();
         Escritorio.add(verventana);
@@ -153,6 +138,13 @@ public class MenuGeneral extends javax.swing.JFrame {
         Escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_MenuPrecioActionPerformed
+
+    private void ProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProductosActionPerformed
+        GestionDeProducto verventana;
+        verventana = new GestionDeProducto();
+        Escritorio.add(verventana);
+        verventana.show();// TODO add your handling code here:
+    }//GEN-LAST:event_ProductosActionPerformed
 
     /**
      * @param args the command line arguments

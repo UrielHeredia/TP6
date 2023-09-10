@@ -59,14 +59,14 @@ public class GestionDeProducto extends javax.swing.JInternalFrame {
         setMaximizable(true);
         setTitle("Gestion de Productos");
 
-        Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lupa (2).png"))); // NOI18N
+        Buscar.setIcon(new javax.swing.ImageIcon("C:\\Users\\elihe\\OneDrive\\Escritorio\\TP6\\src\\main\\java\\TP6\\imagenes\\lupa (2).png")); // NOI18N
         Buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuscarActionPerformed(evt);
             }
         });
 
-        Nuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/registro.png"))); // NOI18N
+        Nuevo.setIcon(new javax.swing.ImageIcon("C:\\Users\\elihe\\OneDrive\\Escritorio\\TP6\\src\\main\\java\\TP6\\imagenes\\registro.png")); // NOI18N
         Nuevo.setText("Nuevo");
         Nuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +74,7 @@ public class GestionDeProducto extends javax.swing.JInternalFrame {
             }
         });
 
-        Guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/disco-flexible.png"))); // NOI18N
+        Guardar.setIcon(new javax.swing.ImageIcon("C:\\Users\\elihe\\OneDrive\\Escritorio\\TP6\\src\\main\\java\\TP6\\imagenes\\disco-flexible.png")); // NOI18N
         Guardar.setText("Guardar");
         Guardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +82,7 @@ public class GestionDeProducto extends javax.swing.JInternalFrame {
             }
         });
 
-        Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminar.png"))); // NOI18N
+        Eliminar.setIcon(new javax.swing.ImageIcon("C:\\Users\\elihe\\OneDrive\\Escritorio\\TP6\\src\\main\\java\\TP6\\imagenes\\eliminar.png")); // NOI18N
         Eliminar.setText("Eliminar");
         Eliminar.setEnabled(false);
         Eliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -91,7 +91,7 @@ public class GestionDeProducto extends javax.swing.JInternalFrame {
             }
         });
 
-        Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar-sesion.png"))); // NOI18N
+        Salir.setIcon(new javax.swing.ImageIcon("C:\\Users\\elihe\\OneDrive\\Escritorio\\TP6\\src\\main\\java\\TP6\\imagenes\\cerrar-sesion.png")); // NOI18N
         Salir.setText("Salir");
         Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -138,7 +138,7 @@
     <Component class="javax.swing.JButton" name="Buscar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/lupa (2).png"/>
+          <Image iconType="2" name="C:\Users\elihe\OneDrive\Escritorio\TP6\src\main\java\TP6\imagenes\lupa (2).png"/>
         </Property>
       </Properties>
       <Events>
@@ -148,7 +148,7 @@
     <Component class="javax.swing.JButton" name="Nuevo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/registro.png"/>
+          <Image iconType="2" name="C:\Users\elihe\OneDrive\Escritorio\TP6\src\main\java\TP6\imagenes\registro.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Nuevo"/>
       </Properties>
@@ -159,7 +159,7 @@
     <Component class="javax.swing.JButton" name="Guardar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/disco-flexible.png"/>
+          <Image iconType="2" name="C:\Users\elihe\OneDrive\Escritorio\TP6\src\main\java\TP6\imagenes\disco-flexible.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Guardar"/>
       </Properties>
@@ -170,7 +170,7 @@
     <Component class="javax.swing.JButton" name="Eliminar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/eliminar.png"/>
+          <Image iconType="2" name="C:\Users\elihe\OneDrive\Escritorio\TP6\src\main\java\TP6\imagenes\eliminar.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Eliminar"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -182,7 +182,7 @@
     <Component class="javax.swing.JButton" name="Salir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes/cerrar-sesion.png"/>
+          <Image iconType="2" name="C:\Users\elihe\OneDrive\Escritorio\TP6\src\main\java\TP6\imagenes\cerrar-sesion.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
