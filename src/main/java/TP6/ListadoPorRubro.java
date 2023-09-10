@@ -4,6 +4,8 @@
  */
 package TP6;
 
+import TP6.modelo.Categoria;
+import TP6.modelo.Producto;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -20,6 +22,14 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
         initComponents();
         armarCabecera();
     }
+    private void armarCabecera(){
+        modelo.addColumn("Código");
+        modelo.addColumn("Descripción");
+        modelo.addColumn("Precio");
+        modelo.addColumn("Stock");
+        jtTabla.setModel(modelo);
+            }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -44,7 +54,12 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
 
         jlRubro.setText("Elija rubro:");
 
-        Rubro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Comestibles", "Limpieza", "Perfumeria" }));
+        Rubro.setModel(new javax.swing.DefaultComboBoxModel<>(new Categoria[] { Categoria.LIMPIEZA, Categoria.PERFUMERIA, Categoria.COMESTIBLE }));
+        Rubro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RubroActionPerformed(evt);
+            }
+        });
 
         jtTabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -92,16 +107,23 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private void armarCabecera(){
-        modelo.addColumn("Código");
-        modelo.addColumn("DescriTablaRubro");
-        modelo.addColumn("Precio");
-        modelo.addColumn("Stock");
-        jtTabla.setModel(modelo);
-            }
+
+    private void RubroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RubroActionPerformed
+       Categoria encontrado=(Categoria)Rubro.getSelectedItem();
+       borrarFilas();
+       for(Producto encontrar: MenuGeneral.productos){
+       modelo.addRow(new Object[]{encontrar.getCodigo(),encontrar.getDescripcion(),encontrar.getPrecio(),encontrar.getStock()});
+       }
+    }//GEN-LAST:event_RubroActionPerformed
+private void borrarFilas(){
+    int indice = modelo.getRowCount() -1;
+    for(int i = indice; i >= 0; i--){
+        modelo.removeRow(i);
+    }
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> Rubro;
+    private javax.swing.JComboBox<Categoria> Rubro;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jlListado;
     private javax.swing.JLabel jlRubro;

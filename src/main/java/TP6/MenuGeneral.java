@@ -4,11 +4,15 @@
  */
 package TP6;
 
+import TP6.modelo.Producto;
+import java.util.TreeSet;
+
 /**
  *
  * @author Uriel
  */
 public class MenuGeneral extends javax.swing.JFrame {
+    public static TreeSet<Producto> productos = new TreeSet<>();
 
     /**
      * Creates new form MenuGeneral
