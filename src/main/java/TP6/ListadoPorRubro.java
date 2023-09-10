@@ -112,7 +112,13 @@ public class ListadoPorRubro extends javax.swing.JInternalFrame {
        Categoria encontrado=(Categoria)Rubro.getSelectedItem();
        borrarFilas();
        for(Producto encontrar: MenuGeneral.productos){
-       modelo.addRow(new Object[]{encontrar.getCodigo(),encontrar.getDescripcion(),encontrar.getPrecio(),encontrar.getStock()});
+           if(encontrar.getRubro().equals(encontrado)){
+       modelo.addRow(new Object[]{
+           encontrar.getCodigo(),
+           encontrar.getDescripcion(),
+           encontrar.getPrecio(),
+           encontrar.getStock()});
+       }
        }
     }//GEN-LAST:event_RubroActionPerformed
 private void borrarFilas(){
